@@ -1,0 +1,9 @@
+name = "agenda-de-planos"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = ".output/public"
+
+# Deploy via GitHub Actions (.github/workflows/deploy.yml), não pelo build
+# nativo do Cloudflare Pages — então build vars (VITE_SUPABASE_URL,
+# VITE_SUPABASE_ANON_KEY, VITE_SUPABASE_SCHEMA se aplicável) vão como
+# secrets/vars do repositório no GitHub Actions, não no dashboard do
+# Cloudflare Pages (que só se aplicaria se o Cloudflare fizesse o build).
